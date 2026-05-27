@@ -1,6 +1,6 @@
-# doc-skeleton
+# online-learning
 
-Tämä on Skeleton for Documentation Project -oppimateriaali. Projekti löytyy tavallisena HTTP-sivustona verkosta (ks. linkki tämän sivun About-osiosta).
+Tämä on Online Learning -oppimateriaali. Projekti löytyy tavallisena HTTP-sivustona verkosta (ks. linkki tämän sivun About-osiosta).
 
 Projekti hyödyntää vahvasti [MkDocs](https://www.mkdocs.org/)-sivustogeneraattoria, joka luo `docs/`-hakemiston Markdown-tiedostoista staattisen nettisivuston. Projekti käyttää [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)-teemaa.
 
