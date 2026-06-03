@@ -69,9 +69,3 @@ Kurssin kohdan 2B mallilla voi testata, kuinka helppoa mallin toiminta on rikkoa
     - On hyvä sisällyttää Fine tuning koulutukseen aina näytteitä alkuperäisestä datasta
     - On hyvä, että fine tuning data on käynyt läpi ihmisen tarkastuksen
 2. Jos fine tuning opettaa vain osaa mallista (esim. luokittelijaa), malli ei yleensä juuri parane, mutta se on todella helppo rikkoa.   
-
-
-Linkkejä:
-
-* https://course.spacy.io/en/chapter4 -> Best practices for training spaCy models
-* https://rekrytointi.talenom.fi/posts/ai-at-talenom-active-learning
