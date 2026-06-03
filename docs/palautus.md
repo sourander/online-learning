@@ -50,13 +50,3 @@ Palautat **15 minuutin video**. Videolla:
 
 Opettaja arvioi työsi [Arviointityökalulla](https://arviointi.munpaas.com/). Valitse vetovalikosta *Videoitu demo*, ja voit kokeilla, kuinka arvioisit itse oman työsi.
 
-## Honor Code
-
-Modified from www.coursera.org Honor Code.
-
-* Your answers to homework, quizzes, and exams must be your own work (except for assignments that explicitly permit collaboration).
-* You may not share your solutions to homework, quizzes, or exams with anyone else unless explicitly permitted by the lecturer. This includes anything written by you, as well as any official solutions provided by the lecturer.
-* You may not engage in any other activities that will dishonestly improve your results or dishonestly improve or damage the results of others.
-* Cooperation is always allowed and encouraged, as long as all your return material is your own work.
-You can use Artificial Intelligence (e.g. chatGPT), but if you use AI generated text in your answer, you must notify it clearly
-* Always add references to your answers.
