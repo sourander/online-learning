@@ -1,0 +1,808 @@
+
+<!doctype html>
+<html lang="fi" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="vaiheet/1a-iac-terraform/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Online Learning</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#johdanto" class="md-skip">
+          Hyppää sisältöön
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Ylätunniste">
+    <a href="." title="Online Learning" class="md-header__button md-logo" aria-label="Online Learning" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Online Learning
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Johdanto
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Hae" placeholder="Hae" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Haku">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Tyhjää" aria-label="Tyhjää" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Aloitetaan hakua
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigaatio" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Online Learning" class="md-nav__button md-logo" aria-label="Online Learning" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Online Learning
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Johdanto
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Johdanto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Sisällysluettelo">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Sisällysluettelo
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tervetuloa-kurssille" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tervetuloa kurssille
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurssin-vaiheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kurssin vaiheet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kurssin vaiheet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vaihe-1-iac-terraform-workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vaihe 1: IaC Terraform Workshop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vaihe-2-drawhello-ja-flowermodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vaihe 2: Drawhello ja Flowermodel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vaiheet
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vaiheet
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vaiheet/1a-iac-terraform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1A: IaC Terraform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vaiheet/1b-static-js/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1B: ONNX Runtime Web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vaiheet/2a-drawhello/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2A: Drawhello ja Azurite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vaiheet/2b-flowermodel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2B: FlowerModel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vaiheet/2c-skriptaus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2C: Skriptaus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="palautus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ohjeita videoon/palautukseen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Sisällysluettelo">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Sisällysluettelo
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tervetuloa-kurssille" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tervetuloa kurssille
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurssin-vaiheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kurssin vaiheet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kurssin vaiheet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vaihe-1-iac-terraform-workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vaihe 1: IaC Terraform Workshop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vaihe-2-drawhello-ja-flowermodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vaihe 2: Drawhello ja Flowermodel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="johdanto">Johdanto</h1>
+<h2 id="tervetuloa-kurssille">Tervetuloa kurssille</h2>
+<p>Kurssilla käytetään Azurea, joten varmistathan heti alkuvaiheissa, että sinulla on pääsy tarvittaviin palveluihin. Huomaa, että pääsyä ei ole mitenkään automaattisesti, vaan se on annettu alkujaan heille, jotka ovat <strong>ilmoittautuneet Pakki-järjestelmässä kurssille ajoissa</strong>.</p>
+<ol>
+<li>Kirjaudu HAKA-tunnuksilla <a href="http://portal.azure.com/">Azure Portaliin</a> ja tutki mitä sieltä löytyy.</li>
+<li>Varmista, että Azuresta löytyy Reppussa esitelty subscription.<ul>
+<li>Löydät sen etimällä palvelua nimeltään <strong>Subscriptions</strong></li>
+<li>Jos oikeaa subscriptionia ei näy, ja luulet että sen pitäisi näkyä, tarkista listan yltä filtterit. Ehkä se on vain piilotettuna.</li>
+<li>Jos ei vieläkään löydy, olet todennäköisesti unohtanut ilmoittautua kurssille ajoissa. Ota yhteyttä opettajaan, jotta asia saadaan kuntoon.</li>
+</ul>
+</li>
+<li>Subscriptionin sisältä löytyy <strong>resource group</strong>, jossa esiintyy sinun nimesi.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Minkä nimistä subscriptionia etsin?</p>
+<p>Nimi <strong>ei ole</strong> muotoa <code>KAMK TT00CC71-XXXX Online Learning</code>, kuten vanhoissa videoissa väitetään! Käytämme nykyään Azure DevOps:ia luomaan pääsyt tiettyyn Azure subscriptioniin, jonka nimi löytyy Reppu-palvelusta. Tämä dokumentti on julkinen, joten en halua julkaista subscriptionin nimeä tässä tietoturvasyistä.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">TUHOA!</p>
+<p>Kurssilla luodaan Azureen maksullisia palveluita. Tuhoa Terraformilla luodut palvelut aina kun lopetat työskentelyn (terraform destroy); luo ne seuraavalla kerralla uusiksi. Jos Terraform herjaa jotakin, käy tuhoamassa resurssit käsin.</p>
+</div>
+<h2 id="kurssin-vaiheet">Kurssin vaiheet</h2>
+<p>Kurssin aikana toteutetaan kaksi vaihetta, joista ensimmäinen keskittyy Terraformin ja Azuren perusteiden opiskeluun, toinen keskittyy Azuren käyttöön tämän kurssin casen kohdalla. Huomaa, että kurssin voisi tehdä Azuressa useita eri palveluita käyttämällä. Tässä toteutuksessa työkaluksi on valittu <em>Azure Container Instances (ACI)</em>. Päällimmäinen syy tälle on, että <strong>se muistuttaa Docker Compose Projectia</strong>, joka on opiskelijoille jo entuudestaan tuttu. Yksittäinen <em>container instance</em> on hyvin lähelle sama asia kuin docker compose project: servicet/kontit ovat keskenään lähiverkossa, mutta niihin pääsee käsiksi ulkopuolelta, mikäli siihen aukoo portteja. Jos pystyttäisit tuotantoa varten vastaavan ratkaisun, voisit päätyä hyvin eri Azure-palveluihin: tällöin todennäköisesti sekä tuntihinta että toteutuksen monimutkaisuus kasvaisivat merkittävästi.</p>
+<h3 id="vaihe-1-iac-terraform-workshop">Vaihe 1: IaC Terraform Workshop</h3>
+<p>Kurssin ensimmäisessä vaiheessa (Vaihe 1 ja sen osat 1A ja 1B) tutustutaan Terraformin ja Azuren käyttöön muutamalla erilaisella harjoituksella. Vaihe 1A sisältää Janin luennot ja esimerkkikoodit Azure instanssien Blob storage ja Virtual Machine -käyttöön. </p>
+<pre class="mermaid"><code>flowchart LR
+
+    subgraph LocalPC["Local PC"]
+        Browser["a. Locally run web browser&lt;br/&gt;&lt;br/&gt;Runs inference locally"]
+    end
+
+    subgraph AzureCloud["Azure cloud"]
+        WebServer["b. Web server&lt;br/&gt;Azure Storage static website"]
+
+        Storage@{ shape: lin-cyl, label: "c. Azure Storage Container&lt;br/&gt;&lt;br/&gt;index.html&lt;br/&gt;styles.css&lt;br/&gt;script.js&lt;br/&gt;model.onnx" }
+    end
+
+    Browser -- "1. Get page" --&gt; WebServer
+    WebServer -- "2. Get files&lt;br/&gt;index.html, styles.css, script.js, model.onnx" --&gt; Storage
+    Storage -- "3. Return files" --&gt; WebServer
+    WebServer -- "3. Return page + files" --&gt; Browser</code></pre>
+<p><strong>Kuva 1:</strong> <em>Yksinkertainen IaC Workshop Lesson 1:stä tuttu arkkitehtuuri. Huomaa, että erillistä "web serveriä" ei kuitenkaan ole Azuressa palveluna. Kyseessä on Azure Storagen sisäinen, staattinen website server.</em></p>
+<p>Alla linkit IaC Terraform -workshopin koodeihin sekä luentovideoihin. Katso videot ja tee perässä. Muista tuhota resurssit workshopin päätteeksi.</p>
+<ul>
+<li><a href="https://gitlab.dclabra.fi/workshopit/iac-terraform">GitLab: IaC Terraform</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL7AbISYtmmfiwaZSYNwIW-pDIOV17QNit">YouTube: IaC Terraform</a></li>
+</ul>
+<h3 id="vaihe-2-drawhello-ja-flowermodel">Vaihe 2: Drawhello ja Flowermodel</h3>
+<p>Vaiheessa kaksi luomme monimutkaisemman kokonaisuuden, jonka esikuvana toimii opettajan luoma äärimmäisen simppeli Drawhello-tekoäly. Tämä koostuu osista 2A (opettajan drawhello-esimerkki), 2B (sinun tekemäsi flowermodel) ja 2C, joka on lisähaaste liittyen kokonaisuuden automatisointiin skriptauksen avulla.</p>
+<p><img alt="" src="images/2a-architecture.png" /></p>
+<p><strong>Kuva 2:</strong> <em>Kuvan arkkitehtuuri esittää Vaihe 2A:n lopputuotosta. Osa palveluista on kontteja Azure Container Instances (ACI)-palvelussa. Näitä ovat: <code>ui</code> (Streamlit), <code>predictor</code> (FastAPI) ja <code>modeller</code> (Python + ML-kirjasto). Object storage ja Storage Queue ovat Azuren hallinnoimia palveluita, ja kuuluvat Azure Storage -perheeseen, joten ne ovat yhden Azure Storage (Account) -laatikon sisällä.</em></p>
+<p>Yllä oleva Kuva 2 pyrkii hahmottamaan vaiheen 2A lopputuotosta. Tältä pohjalta sinä muokkaat sinun oman 2B-osan. 2A-osan kuvaus on sanallisesti ja värikoodattujen nuolien avulla. Aloitetaan punaisista nuolista, jotka kuvaajat käyttäjän käynnistämää ennusteen tekoa:</p>
+<ol>
+<li>Käyttäjä avaa selaimella <code>https://something.azurewebsites.net/</code>-osoitteen. <code>ui</code> palauttaa käyttöliittymän HTML-muodossa.</li>
+<li>Käyttäjä luo syötteen (esim. piirtää "Hello"-tekstin piirustuslaatikkoon) ja painaa "Predict"-nappia.</li>
+<li><code>ui</code> kutsuu backendiä nimeltään <code>predictor</code> ja välittää sille syötteen (esim. piirroksen).</li>
+<li>Tässä välissä on kaksi mustaa paluunuolta: ennuste palaa käyttäjälle.</li>
+<li>Käyttäjä voi halutessaan hyväksyä ennusteen ("Kyllä, tekstissä luki HELLO") tai hylätä sen ("Ei, tekstissä luki WORLD"). Hän tekeen näin, ja tämä <code>POST</code>-kutsu menee <code>predictor</code>-palveluun.</li>
+<li><code>predictor</code> välittää Queue-palveluun viestin, joka sisältää <code>(IMAGE_DATA, LABEL)</code>-parin.</li>
+</ol>
+<p>Kuvaajassa on myös numeroimattomia oransseja katkonuolia. Nämä kuvastavat sitä osuutta taustapalveluita, joiden kanssa käyttäjä ei suoraan ole vuorovaikutuksessa. Niiden keskiössä on <code>modeller</code>-palvelu, joka:</p>
+<ul>
+<li>Lukee ajoittain Queue-palvelusta uusia <code>(IMAGE_DATA, LABEL)</code>-pareja.</li>
+<li>Jos uusia pareja on yli kynnysarvon <code>N</code>, se... <ul>
+<li>noutaa kuvat Queue-palvelusta,</li>
+<li>fine-tunaa mallin,</li>
+<li>ja tallentaa uuden mallin Azure Storageen.</li>
+</ul>
+</li>
+</ul>
+<p>Vastaavasti <code>predictor</code>-palvelu käy ajoittain tarkistamassa, onko Azure Storagessa uutta mallia. Jos on, se hakee sen ja ottaa käyttöönsä. Muutoin se käyttää vanhaa mallia, joka sillä on muistissaan. Käyttäjälle tämä on täysin näkymätöntä.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Mitä sinä sitten teet? Noh, annetussa esimerkissä on käytössä <code>scikit-learn</code>, jolla koulutetaan täysin naiivi logistinen regressio tunnistamaan binärisöidyn kuvan avulla teksti "HELLO" tai "WORLD". Annetussa esimerkissä kuva pienennetään 40x20 kokoon, ja nämä 800 pikseliä syötetään jonopalveluun merkkijonona muotoa: <code>101010101...(800 merkkiä)...010101</code>. Tämä on tarkoituksellisen huono ratkaisu!</p>
+<p>Sinun tehtäväsi on ottaa Syväoppiminen II -kurssilla koulutettu FlowerModel, joka tunnistaa kukkalajit kuvien perusteella PyTorch <a href="https://docs.pytorch.org/vision/main/models/generated/torchvision.models.mobilenet_v3_small.html">MobileNet V3 Small</a> -arkkitehtuuria hyödyntäen. Arkkitehtuuri vaatii 224x224 RGB-kuvan, ja sitä ei ole mitään järkeä yrittää survoa Queue-palveluun, johon ei voi lisätä 64 KB suurempaa dataa (base64-enkoodattuna, jossa on overheadia). Siispä sinun tulee lähtökohtaisesti:</p>
+<ul>
+<li>Tallentaa kuva Blob Storageen.</li>
+<li>Välittää Queue-palveluun kuvan URL ja label.</li>
+</ul>
+<p>On sinun valintasi, tekeekö tämän Blob-tallennuksen <code>ui</code>-palvelu, vai siirrätkö tämän koko logiikan <code>predictor</code>-palveluun, jolloin <code>ui</code>-kontin pyörittämältä Streamlitiltä poistuisi kokonaisuudessaan tarve kommunikoida Azure Storage -palveluiden kanssa.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 <a href="https://www.kamk.fi">Kajaanin Ammattikorkeakoulu Oy</a>. 
+Licenced under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Kopioitu leikep\u00f6yd\u00e4lle", "clipboard.copy": "Kopioi leikep\u00f6yd\u00e4lle", "search.result.more.one": "1 lis\u00e4\u00e4 t\u00e4ll\u00e4 sivulla", "search.result.more.other": "# lis\u00e4\u00e4 t\u00e4ll\u00e4 sivulla", "search.result.none": "Ei t\u00e4sm\u00e4\u00e4vi\u00e4 dokumentteja", "search.result.one": "1 t\u00e4sm\u00e4\u00e4v\u00e4 dokumentti", "search.result.other": "# t\u00e4sm\u00e4\u00e4v\u00e4\u00e4 dokumenttia", "search.result.placeholder": "Kirjoita aloittaaksesi haun", "search.result.term.missing": "Puuttuu", "select.version": "Valitse versio"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
