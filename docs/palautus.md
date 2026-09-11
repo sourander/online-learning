@@ -35,7 +35,7 @@ Käytäthän opettajan sinulle antamaasi repositoriota, jotta opettajalla on aut
 
 ## Sisällöllinen ohje
 
-Palautat **15 minuutin video**. Videolla:
+Palauta **15 minuutin video**. Videolla:
 
 * Esittelet Azureun luodun kokonaisuuden, joka on:
     * 1B tasolla (maksimiarvosana 1)
