@@ -11,11 +11,11 @@
 
 Pääpiirteittäin vaiheet ovat:
 
-1. Asenna ohjeiden mukaan omalle koneellesi Azure CLI ja Terraform CLI
+1. Asenna ohjeiden mukaan omalle koneellesi Azure CLI ja Terraform CLI
 2. Tee harjoitus "lesson_01 - Static Webpage".
     - Huom. Varmista, että saat nettisivun auki ja siellä on oikea sisältö!
 3. Tee harjoitus "lesson_02 - Linux Virtual Machine".
-    - Huom. Varmista, että saat SSH yhteyden koneeseen!
+    - Huom. Varmista, että saat SSH yhteyden koneeseen!
 4. Muista tuhota kaikki resurssit kun lopetat työskentelyn!
 
 !!! warning

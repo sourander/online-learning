@@ -2,14 +2,15 @@
 
 ## Tervetuloa kurssille
 
-Kurssilla käytetään Azurea, joten varmistathan heti alkuvaiheissa, että sinulla on pääsy tarvittaviin palveluihin. Huomaa, että pääsyä ei ole mitenkään automaattisesti, vaan se on annettu alkujaan heille, jotka ovat **ilmoittautuneet Pakki-järjestelmässä kurssille ajoissa**.
+Kurssilla käytetään Azurea, joten varmistathan heti alkuvaiheissa, että sinulla on pääsy tarvittaviin palveluihin. Huomaa, että pääsyä ei ole mitenkään automaattisesti, vaan se on annettu alkujaan heille, jotka ovat **ilmoittautuneet Pakki-järjestelmässä kurssille ajoissa**. Pääsyt tarjoillaan Azure DevOpsin kautta, ja ne ovat voimassa vain kurssin ajan.
 
 1. Kirjaudu HAKA-tunnuksilla [Azure Portaliin](http://portal.azure.com/) ja tutki mitä sieltä löytyy.
 2. Varmista, että Azuresta löytyy Reppussa esitelty subscription.
     - Löydät sen etimällä palvelua nimeltään **Subscriptions**
+    - Subscriptionissa esiintyy sana `pilvikurssi`
     - Jos oikeaa subscriptionia ei näy, ja luulet että sen pitäisi näkyä, tarkista listan yltä filtterit. Ehkä se on vain piilotettuna.
     - Jos ei vieläkään löydy, olet todennäköisesti unohtanut ilmoittautua kurssille ajoissa. Ota yhteyttä opettajaan, jotta asia saadaan kuntoon.
-3. Subscriptionin sisältä löytyy **resource group**, jossa esiintyy sinun nimesi.
+3. Subscriptionin sisältä löytyy **resource group**, jossa esiintyy sinun nimesi. Teet kaiken työn tämän sisällä.
 
 !!! tip "Minkä nimistä subscriptionia etsin?"
 
