@@ -13,6 +13,8 @@
 
 Kurssin toisessa osassa (2A ja 2B) jatketaan Terraformin ja Azuren käyttöä rakentamalla suurempi kokonaisuus, jossa on useita kontteja, jotka muodostavat keskenään mikropalveluarkkitehtuuria noudattavan kokonaisuuden. Vaihe 2A on opettajan esimerkki (Drawhello). Vaiheessa 2B muokkaat (tai luot kokonaan alusta) oman toteutuksesi.
 
+Opettajan esimerkki löytyy kokonaisuudessaan repositoriosta: [gl:jani-public/online-learning-demo](https://gitlab.dclabra.fi/jani-public/online-learning-demo).
+
 ## 2A: Drawhello
 
 Opettajan tallentamat luennot ja opettajan esimerkki sisältää ympäristön, jossa ajetaan ja jatkokoulutetaan logistista regressiota tekevää yksinkertaista palvelua. Kokonaisuus **ennustaa käsin kirjoitetuja sanoja "Hello" ja "World" pikselidatan perusteella.** 
